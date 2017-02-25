@@ -1,0 +1,112 @@
+C:\workrstation>git push -u origin master
+To https://github.com/JaganMandalapu/vagrant-projects.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/JaganMandalapu/vagrant-projects.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\workrstation>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\workrstation>git pull master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\workrstation>gil pull
+'gil' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\workrstation>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\workrstation>git fetchh
+git: 'fetchh' is not a git command. See 'git --help'.
+
+Did you mean this?
+        fetch
+
+C:\workrstation>git fetch
+
+C:\workrstation>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\workrstation>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\workrstation>git pull origin master
+From https://github.com/JaganMandalapu/vagrant-projects
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\workrstation>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\workrstation>git pull origin branchname --allow-unrelated-histories
+fatal: Couldn't find remote ref branchname
+
+C:\workrstation>git pull origin master --allow-unrelated-histories
+From https://github.com/JaganMandalapu/vagrant-projects
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+C:\workrstation>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\workrstation>git push -u origin master
+Counting objects: 24, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (24/24), 4.45 KiB | 0 bytes/s, done.
+Total 24 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+Branch master set up to track remote branch master from origin.
+To https://github.com/JaganMandalapu/vagrant-projects.git
+   ed0b1da..b35eb17  master -> master
+
+C:\workrstation>
